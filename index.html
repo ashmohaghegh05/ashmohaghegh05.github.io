@@ -5,29 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            color: #111827;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1f2937;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to My Website</h1>
 
-    <p>Hello! This is my personal website for OIM3690.</p>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>OIM3690 | Web Development with AI</p>
+    </header>
 
-    <h2>About Me</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#learning">What I'm Learning</a>
+        <a href="#course">Course</a>
+    </nav>
 
-    <p>
-        I am learning web development, GitHub, HTML,
-        and how AI can be used in the development process.
-    </p>
+    <div class="container">
 
-    <h2>What I Am Learning</h2>
+        <div class="card" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a student learning web development, GitHub, HTML,
+                and how AI can be used as part of the development process.
+            </p>
+        </div>
 
-    <ul>
-        <li>HTML</li>
-        <li>Git and GitHub</li>
-        <li>GitHub Pages</li>
-        <li>Markdown</li>
-        <li>AI-assisted development</li>
-    </ul>
+        <div class="card" id="learning">
+            <h2>What I'm Learning</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>Git and GitHub</li>
+                <li>GitHub Pages</li>
+                <li>Markdown</li>
+                <li>Reading AI-generated code</li>
+                <li>AI-assisted development</li>
+            </ul>
+        </div>
+
+        <div class="card" id="course">
+            <h2>OIM3690</h2>
+            <p>
+                This website is part of my work for OIM3690.
+                I will continue improving it as I learn more about
+                web development throughout the semester.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Built with HTML and CSS</p>
+    </footer>
+
 </body>
 
 </html>
