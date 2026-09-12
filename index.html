@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Personal Website</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            color: #222;
+            background: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.6;
         }
 
         header {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px;
         }
 
         header h1 {
@@ -28,55 +30,39 @@
 
         header p {
             font-size: 18px;
-            margin-top: 10px;
         }
 
         nav {
             background: white;
-            padding: 15px;
             text-align: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            padding: 15px;
         }
 
         nav a {
-            color: #111827;
-            text-decoration: none;
             margin: 0 15px;
+            text-decoration: none;
+            color: #111827;
             font-weight: bold;
         }
 
-        nav a:hover {
-            color: #2563eb;
-        }
-
-        .container {
+        main {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        .card {
+        section {
             background: white;
             padding: 30px;
             margin-bottom: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #1f2937;
-        }
-
-        ul {
-            line-height: 1.8;
         }
 
         footer {
             text-align: center;
-            padding: 25px;
             background: #111827;
             color: white;
-            margin-top: 40px;
+            padding: 25px;
         }
     </style>
 </head>
@@ -85,26 +71,28 @@
 
     <header>
         <h1>Welcome to My Website</h1>
-        <p>OIM3690 | Web Development with AI</p>
+        <p>Student • Learner • Exploring Web Development with AI</p>
     </header>
 
     <nav>
         <a href="#about">About</a>
-        <a href="#learning">What I'm Learning</a>
-        <a href="#course">Course</a>
+        <a href="#learning">Learning</a>
+        <a href="#course">OIM3690</a>
     </nav>
 
-    <div class="container">
+    <main>
 
-        <div class="card" id="about">
+        <section id="about">
             <h2>About Me</h2>
-            <p>
-                I am a student learning web development, GitHub, HTML,
-                and how AI can be used as part of the development process.
-            </p>
-        </div>
 
-        <div class="card" id="learning">
+            <p>
+                Welcome to my personal website. I am currently learning
+                how websites are built, published, and improved using
+                tools such as HTML, GitHub, and artificial intelligence.
+            </p>
+        </section>
+
+        <section id="learning">
             <h2>What I'm Learning</h2>
 
             <ul>
@@ -115,21 +103,28 @@
                 <li>Reading AI-generated code</li>
                 <li>AI-assisted development</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="card" id="course">
+        <section id="course">
             <h2>OIM3690</h2>
-            <p>
-                This website is part of my work for OIM3690.
-                I will continue improving it as I learn more about
-                web development throughout the semester.
-            </p>
-        </div>
 
-    </div>
+            <p>
+                OIM3690 is helping me understand not only how to
+                generate code with AI, but also how to read,
+                question, and improve the code that AI produces.
+            </p>
+
+            <p>
+                <a href="https://ashmohaghegh05.github.io/oim3690/">
+                    Visit my OIM3690 course site
+                </a>
+            </p>
+        </section>
+
+    </main>
 
     <footer>
-        <p>Built with HTML and CSS</p>
+        <p>Built while learning Web Development with AI.</p>
     </footer>
 
 </body>
